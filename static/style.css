@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #013220; /* Verde escuro para o fundo */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 90%;
+}
+
+h1, h2 {
+    color: #ffd700; /* Dourado */
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.game-area {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.player-section {
+    background-color: #2c3e50; /* Azul escuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 45%;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    min-height: 120px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 80px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.controls button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+#start-btn {
+    background-color: #2ecc71; /* Verde */
+    color: white;
+}
+#start-btn:hover { background-color: #27ae60; }
+
+#hit-btn {
+    background-color: #3498db; /* Azul */
+    color: white;
+}
+#hit-btn:hover { background-color: #2980b9; }
+
+#stand-btn {
+    background-color: #e74c3c; /* Vermelho */
+    color: white;
+}
+#stand-btn:hover { background-color: #c0392b; }
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+#game-status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}

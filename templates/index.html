@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack com IA em Python</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Blackjack com IA em Python</h1>
+        <p>A lógica do jogo é executada no servidor Python e a interface no navegador!</p>
+        
+        <div class="game-area">
+            <div class="player-section">
+                <h2>Dealer (IA)</h2>
+                <div id="dealer-hand" class="hand"></div>
+                <p>Pontos: <span id="dealer-score">??</span></p>
+            </div>
+
+            <div class="player-section">
+                <h2>Jogador</h2>
+                <div id="player-hand" class="hand"></div>
+                <p>Pontos: <span id="player-score">0</span></p>
+            </div>
+        </div>
+        
+        <div class="difficulty-select">
+            <label for="difficulty-select">Dificuldade da IA:</label>
+            <select id="difficulty-select">
+                <option value="facil">Fácil</option>
+                <option value="medio" selected>Médio</option>
+                <option value="dificil">Difícil</option>
+                <option value="impossivel">Impossível</option>
+            </select>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Começar Jogo</button>
+            <button id="hit-btn" disabled>Comprar Carta</button>
+            <button id="stand-btn" disabled>Parar</button>
+        </div>
+
+        <div id="game-status"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
