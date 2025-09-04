@@ -33,7 +33,7 @@ Certifique-se de que você tem o Python 3 instalado em seu sistema.
 
 ### Instalação
 1. Clone este repositório para sua máquina local:
-   `git clone https://github.com/seu-usuario/seu-repositorio.git`
+   `git clone https://github.com/guiwillians/Blackjack-com-IA-em-Python-e-Flask.git`
 2. Navegue até a pasta do projeto:
    `cd seu-repositorio`
 3. Crie um ambiente virtual (recomendado):
